@@ -7,7 +7,7 @@
   "scripts": {
     "fetch-recipes": "bun fetch-recipes.ts",
     "start": "bun index.ts; sed 's/,$//;1d;$d;s/^[ \t]*//' training.json > training.jsonl",
-	"fetch-and-start": "bun fetch-recipes.ts; bun index.ts; sed 's/,$//;1d;$d;s/^[ \t]*//' training.json > training.jsonl"
+    "fetch-and-start": "bun fetch-recipes.ts; bun index.ts; sed 's/,$//;1d;$d;s/^[ \t]*//' training.json > training.jsonl"
   },
   "author": "",
   "license": "ISC",
@@ -15,8 +15,10 @@
     "@aws-sdk/client-dynamodb": "^3.501.0",
     "@aws-sdk/credential-provider-sso": "^3.501.0",
     "@aws-sdk/lib-dynamodb": "^3.501.0",
+    "@aws-sdk/util-retry": "^3.374.0",
     "@types/aws-sdk": "^2.7.0",
     "aws-sdk": "^2.1545.0",
+    "gpt-tokens": "^1.2.0",
     "openai": "^4.26.0",
     "typescript": "^5.3.3"
   },
